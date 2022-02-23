@@ -1,5 +1,6 @@
 import "./App.css";
-import HomeView from "./components/HomeView/HomeView";
+import HomeView from "./components/HomeView";
+import AboutView from "./components/AboutView";
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Link to='/' className="flex justify-center text-4xl text-yellow-700">Pokemon picker</Link>
       <Routes>
         <Route path="/" element={<HomeView />} />
+        <Route path="/about" element={<AboutView />}/>
       </Routes>
       {/* <HomeView></HomeView> */}
     </div>
