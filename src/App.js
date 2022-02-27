@@ -9,7 +9,7 @@ function App() {
       <Link to='/' className="flex justify-center text-4xl text-yellow-700">Pokemon picker</Link>
       <Routes>
         <Route path="/" element={<HomeView />} />
-        <Route path="/about" element={<AboutView />}/>
+        <Route path="/about/:idx" element={<AboutView />}/>
       </Routes>
       {/* <HomeView></HomeView> */}
     </div>
