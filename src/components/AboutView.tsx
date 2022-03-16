@@ -9,7 +9,7 @@ const AboutView = () => {
       back_shiny: "",
     },
     types: {
-      type: "",
+      type: "", 
     },
     
     }  );
