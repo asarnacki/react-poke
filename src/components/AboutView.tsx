@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useEffect, useCallback } from "react";
 import { useParams } from "react-router-dom";
 
@@ -32,6 +33,7 @@ const AboutView = () => {
     return { type };
   }, [API, type]);
 
+  
   useEffect(() => {
     const interval = setInterval(() => {
       getType();
